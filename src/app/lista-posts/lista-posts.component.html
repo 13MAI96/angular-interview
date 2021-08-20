@@ -1,0 +1,19 @@
+<h2>List Post</h2>
+<div class="contenedor">
+    <table class="table">
+        <thead class="encabezadoTabla">
+            <tr>
+                <th class="celdaEncabezado">ID</th>
+                <th class="celdaEncabezado">Post</th>
+                <th class="celdaEncabezado">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="cuerpoTabla">
+            <tr class="fila" *ngFor="let post of posts">
+                <td class="celdaCuerpo">{{post.id}}</td>
+                <td class="celdaCuerpo">{{post.title}}</td>
+                <td class="celdaCuerpo"><a href="post/{{post.id}}">Ver</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

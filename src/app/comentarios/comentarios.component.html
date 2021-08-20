@@ -1,0 +1,16 @@
+<table class="table">
+    <thead class="encabezadoTabla">
+        <tr class="celdaEncabezado">Comentarios</tr>
+    </thead>
+    <tbody class="cuerpoTabla">
+        <tr *ngFor="let comentario of comentarios">
+            <td><p>Nombre: {{comentario.nombre}}</p><p>Comentario: {{comentario.comentario}}</p></td>
+        </tr>
+    </tbody>
+</table>
+<form [formGroup]='formulario' #form="ngForm" style="display: flex; width: 80%; justify-content: center;"> 
+    <input type="text" id="nombre" formControlName="nombre" placeholder="Nombre" class="botonEmit">
+    <input type="text" id="comentario" formControlName="comentario" placeholder="Escriba aqui su comentario" class="botonEmit">
+    <button class="botonEmit" (click)="nuevoComentario(formulario.value)">Emitir</button>
+</form>
+

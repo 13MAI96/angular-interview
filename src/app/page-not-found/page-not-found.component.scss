@@ -1,0 +1,12 @@
+.contenedorVertical{
+    margin-top: 10%;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorBoton{
+    display: flex;
+    flex-direction: row-reverse;
+}

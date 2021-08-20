@@ -1,0 +1,29 @@
+.contenedor{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.table{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #000;
+}
+.encabezadoTabla{
+    background: #c2c2c2;
+}
+.celdaEncabezado{
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.8em;
+}
+.cuerpoTabla{
+    border: 1px solid #000;
+}
+.fila{
+    border: 1px solid #000; 
+}
+.celdaCuerpo{
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.2em;
+}

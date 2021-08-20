@@ -1,0 +1,13 @@
+<div class="contenedor">
+    <div class="ultimoComentario">Ultimo Comentario: {{ultimoComentario | date: 'HH:mm dd-MM-yyyy'}}</div>
+    <div class="contenedorTitulo">
+        <h2 class="titlePost">{{post.id}} - {{post.title}}</h2>
+    </div>
+    <div class="contenedorCuerpo">
+        <p class="bodyPost">{{post.body}}</p>
+    </div>
+    <app-comentarios class="contenedorCuerpo" (ultimoComentario)="fechaUltimoComentario($event)"></app-comentarios>
+    <div style="display:flex; flex-direction: row-reverse;">
+        <button (click)="volver()" class="botonEmit">Volver</button>
+    </div>
+</div>
