@@ -25,13 +25,12 @@ const routes: Routes = [
   },
   {
     path: '404',
-    pathMatch: 'full',
     component: PageNotFoundComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
