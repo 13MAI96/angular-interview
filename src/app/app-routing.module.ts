@@ -24,8 +24,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '404',
-    pathMatch: 'full',
+    path: '#/404',
     component: PageNotFoundComponent
   }
 ];
