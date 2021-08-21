@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall":"ng build --prod",
-    "preinstall":"npm install -g @angular/cli @angular/compiler-cli typescript"
-  }, 
-  "engines":{
+    "postinstall": "ng build --prod",
+    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript"
+  },
+  "engines": {
     "node": "14.17.4",
     "npm": "7.20.5",
     "test": "ng test"
