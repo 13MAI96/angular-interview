@@ -16,7 +16,7 @@
     border: 1px solid #000;
 }
 .celdaCuerpo{
-    border: 1px solid #000;
+    @extend .cuerpoTabla;
     text-align: center;
     font-size: 1.2em;
 }

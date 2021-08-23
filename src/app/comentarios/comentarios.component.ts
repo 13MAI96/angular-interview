@@ -12,7 +12,7 @@ export class ComentariosComponent implements OnInit {
   @Output() ultimoComentario = new EventEmitter<number>();
 
   comentarios: any[] = [
-    {nombre: "Erica", comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+    {nombre: "Kari", comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
     {nombre: "Javi", comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
 ];
   constructor(public formBuilder: FormBuilder) { }
