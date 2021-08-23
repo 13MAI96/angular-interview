@@ -26,7 +26,7 @@ import { ComentariosComponent } from './comentarios/comentarios.component';
     FormsModule,
     ReactiveFormsModule    
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}
+  providers: [
     ],
   bootstrap: [AppComponent]
 })
